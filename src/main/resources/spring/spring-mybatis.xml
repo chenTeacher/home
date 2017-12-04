@@ -7,7 +7,7 @@
                         http://www.springframework.org/schema/context
                         http://www.springframework.org/schema/context/spring-context-3.1.xsd">
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.example,com.app" />
+    <context:component-scan base-package="com.app" />
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -36,13 +36,13 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描mapping.xml文件 -->
-        <property name="mapperLocations" value="classpath:com/example/mapping/*.xml,classpath:mappings/*.xml"></property>
+        <property name="mapperLocations" value="classpath:mappings/*.xml"></property>
 
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.example.dao,com.app.dao" />
+        <property name="basePackage" value="com.app.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
