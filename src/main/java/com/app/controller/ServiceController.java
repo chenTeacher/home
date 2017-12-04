@@ -31,7 +31,7 @@ public class ServiceController {
      *
      *
      */
-    @RequestMapping("getsublist")
+    @RequestMapping("getsublist.do")
     @ResponseBody
     public List getsubListById(String id){
         List<Service> list=serviceService.getsubListById(id);

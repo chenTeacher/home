@@ -5,7 +5,7 @@
   <!--获取一级服务的子服务列表-->
   <select id="getsubListById"  resultType="com.app.entity.Service">
 
-    select * from service WHERE  ID =#{id}
+    select * from service WHERE  TP =#{id}
 
   </select>
 
