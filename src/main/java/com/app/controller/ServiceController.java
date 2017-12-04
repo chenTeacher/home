@@ -31,8 +31,6 @@ public class ServiceController {
     @RequestMapping("getsublist")
     @ResponseBody
     public List getsubListById(String id){
-
-          id="001";
         List<Service> list=serviceService.getsubListById(id);
         return list;
     }
