@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.example.pojo.User" >
+    <result column="USERID" property="userid" jdbcType="VARCHAR" />
+    <result column="USERNAME" property="username" jdbcType="VARCHAR" />
+    <result column="SEX" property="sex" jdbcType="CHAR" />
+    <result column="AGE" property="age" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="getUserALL" parameterType="com.example.pojo.User" resultType="com.example.pojo.User">
+    SELECT * FROM c_user_info;
+  </select>
+  <select id="getUserById" parameterType="com.example.pojo.User" resultType="com.example.pojo.User">
+    SELECT * FROM c_user_info WHERE userid=#{userid,jdbcType=VARCHAR};
+  </select>
+</mapper>

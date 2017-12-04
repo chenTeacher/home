@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>彗星体育</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../script/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<!--轮转效果-->
+		<div data-ride="carousel" class="carousel slide" id="carousel-container">
+			<!--第一部分是关于轮转图片下面的小圆点的图片-->
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#carousel-container"></li>
+				<li data-slide-to="1" data-target="#carousel-container"></li>
+				<li data-slide-to="2" data-target="#carousel-container" class="active"></li>
+			</ol>
+			<!--第二部分是轮转图片部分，3张图片在一个大的DIV下面呈现。div的class必须是carousel-inner，role必须是listbox-->
+			<div class="carousel-inner" style="height: 500px;width: 100%;">
+				<div class="item"><img height="360px" width="100%" src="../images/lb/lb_01.jpg"></img>
+				</div>
+				<div class="item active"><img height="360px" width="100%" src="../images/lb/lb_02.jpg"></img>
+				</div>
+				<div class="item"><img height="360px" width="100%" src="../images/lb/lb_03.jpg"></img>
+				</div>
+			</div>
+			<!--第三部分是轮转图片的左右两个箭头-->
+			<a data-slide="prev" href="#carousel-container" class="left carousel-control">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a data-slide="next" href="#carousel-container" class="right carousel-control">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<!--bootstrap巨幕-->
+		<div class="jumbotron" style="text-align: center;display: flex;">
+
+			<div class="container">
+				<h3>彗星工作室</h3>
+				<p>只因遇见你，想变成更好的存在</p>
+				<p>
+					<a class="btn  btn-lg" href="curriculum.html" role="button" style="background:rgba(0,0,0,0);color: #222222;border: 2px solid #000000;">精品课程</a>
+				</p>
+			</div>
+		</div>
+		<!--关于我们-->
+		<div class="container" style="height: 320px;">
+			<div class="row">
+				<div class="col-xs-1 col-md-1">
+
+				</div>
+				<div class="col-xs-3 col-md-3">
+				
+						<img  class="img-rounded" src="../images/main/main_a_01.png">
+				</div>
+				<div class="col-xs-1 col-md-1">
+
+				</div>
+				<div class="col-xs-6 col-md-6" style="text-align: right;">
+					<h4><b><a href="about.html" style="color: #000000;">/ 关于我们 /</a></b></h4>
+					<h3><b>ABOUT  US</b></h3>
+
+					<p style="text-align: left;">
+						这个夏天我们来了，我们拥有最时尚的训练场馆，拥有最先进的训练器械， 拥有最专业的教练团队， 最一流，最全面的跟踪式服务。选择我们会让您的人生彻底改变！来吧，让我们从这个夏天开始塑造一个 全新的自己！ 我们希望通过我们对生活的态度，对健身的理解和对健康身体的追求在前进的路上和你一起 变得更加积极向上。 让彗星成为一个您进来就能改变的地方，带给您时尚健康的生活方式。
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--金牌教练-->
+		<div style="text-align: center;align-content: center; background: #EEEEEE;width: 100%;padding: 10px;">
+			<div>
+				<h4><b><a href="about.html" style="color: #000000;">/ 金牌教练 /</a></b></h4>
+				<h3><b>GOLD COACH</b></h3>
+			</div>
+			<div class="container">
+				<div class=" row">
+					<div class="col-xs-4 col-md-4">
+						<img class="img-thumbnail" src="../images/coach/coach01.png" />
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<img class="img-thumbnail" src="../images/coach/coach02.png" />
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<img class="img-thumbnail" src="../images/coach/coach03.png" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--找到我们-->
+		<div class="container" style="padding: 10px;text-align: center;">
+			<div style="text-align: left;left: 20px;">
+				<h4><b><a href="about.html" style="color: #000000;">/ 找到我们 /</a></b></h4>
+				<h3><b>ADDRESS</b></h3>
+			</div>
+		</div>
+		<img  src="../images/main/map.png" height="100%" width="100%"/>
+			
+			
+		
+		<script src="../script/libs/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../script/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<footer style="background: #222222;height: 50px;"></footer>
+	</body>
+
+</html>
