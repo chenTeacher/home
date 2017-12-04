@@ -1,12 +1,14 @@
 package com.app.dao;
 
 import com.app.entity.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@Component
 public interface ServiceDao {
 
     List<Service> getsubListById(String id);
+    List<Service> getdetailListById(String id);
 }

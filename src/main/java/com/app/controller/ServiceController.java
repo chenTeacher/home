@@ -37,4 +37,22 @@ public class ServiceController {
     }
 
 
+    /**
+     * 功能描述：根据服务的id获取单个服务详情
+     *
+     *
+     */
+    @RequestMapping("getdetaillist")
+    @ResponseBody
+    public List getDetailListById(String id){
+        List<Service> list=serviceService.getdetailListById(id);
+        return list;
+    }
+
+
+
+
+
+
+
 }

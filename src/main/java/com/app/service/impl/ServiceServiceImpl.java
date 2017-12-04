@@ -16,4 +16,8 @@ public class ServiceServiceImpl implements ServiceService{
     public List<com.app.entity.Service> getsubListById(String id) {
         return serviceDao.getsubListById(id);
     }
+
+    public List<com.app.entity.Service> getdetailListById(String id) {
+        return serviceDao.getdetailListById(id);
+    }
 }

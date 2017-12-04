@@ -7,4 +7,5 @@ import java.util.List;
 public interface ServiceService {
 
     List<Service> getsubListById(String id);
+    List<Service> getdetailListById(String id);
 }
