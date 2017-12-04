@@ -24,16 +24,16 @@ public class ServiceController {
 
 
     /**
-     * 功能描述：
+     * 功能描述：通过一级服务的id获取对于的子列表
      *
      *
      */
-    @RequestMapping("")
+    @RequestMapping("getsublist")
     @ResponseBody
-    public List method(){
+    public List getsubListById(String id){
 
-        List<Service> list=serviceService.getData();
-
+          id="001";
+        List<Service> list=serviceService.getsubListById( id);
         return list;
     }
 

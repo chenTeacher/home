@@ -8,5 +8,5 @@ import java.util.List;
 @Repository
 public interface ServiceDao {
 
-    List<Service> getData();
+    List<Service> getsubListById(String id);
 }

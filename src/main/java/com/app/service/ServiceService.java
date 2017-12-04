@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ServiceService {
 
-    List<Service> getData();
+    List<Service> getsubListById(String id);
 }

@@ -13,7 +13,7 @@ public class ServiceServiceImpl implements ServiceService{
     @Resource
     ServiceDao serviceDao;
 
-    public List<com.app.entity.Service> getData() {
-        return serviceDao.getData();
+    public List<com.app.entity.Service> getsubListById(String id) {
+        return serviceDao.getsubListById(id);
     }
 }
