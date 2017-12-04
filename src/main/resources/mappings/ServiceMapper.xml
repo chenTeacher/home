@@ -4,7 +4,7 @@
 
   <select id="getsubListById"  resultType="com.app.entity.Service">
 
-    select * from service WHERE  id =#{id}
+    select * from service WHERE  ID =#{id}
 
   </select>
 
