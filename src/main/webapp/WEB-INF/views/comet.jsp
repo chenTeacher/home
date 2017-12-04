@@ -12,7 +12,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>彗星体育</title>
+    <title>彗星体育-3人</title>
     <link rel="stylesheet" href="../statics/css/style.css" />
     <link rel="stylesheet" href="../statics/script/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
 </head>
