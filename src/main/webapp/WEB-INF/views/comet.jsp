@@ -23,7 +23,7 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <!--<a class="navbar-brand">Brand-->
-            <img src="../statics/images/main/main_header.png"></a>
+            <img src="../statics/images/shangping/det/sp03.png"></a>
         </div>
         <a class="navbar-brand">彗星体育</a>
         <div class="collapse navbar-collapse" style="margin-right: 200px;">
