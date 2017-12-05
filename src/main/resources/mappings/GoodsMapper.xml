@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.app.dao.GoodsDao" >
-
-  <select id="getData"  resultType="com.app.entity.Goods">
-
+  <!--获取全部商品列表-->
+  <select id="getGoodsAll"  resultType="com.app.entity.Goods">
+    select * from commodity
+  </select>
+  <!--根据商品城市获取商品列表 421100000000000-->
+  <select id="getGoodsByRc"  resultType="com.app.entity.Goods">
+    select * from commodity c where c.region_rc=#{regionCode}
+  </select>
+  <!--根据商品类型获取商品列表 SP_YP-->
+  <select id="getGoodsByTp"  resultType="com.app.entity.Goods">
+    select * from commodity c where c.tp=#{type}
+  </select>
+  <!--根据商品状态获取商品列表 CS_ZS-->
+  <select id="getGoodsByStt"  resultType="com.app.entity.Goods">
+    select * from commodity c where c.stt=#{state}
   </select>
 
-</mapper>
+ </mapper>

@@ -1,12 +1,17 @@
 package com.app.dao;
 
-
 import com.app.entity.Goods;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Repository
+@Component
 public interface GoodsDao {
-    List<Goods> getData();
+  List<Goods> getGoodsAll();
+
+  List<Goods> getGoodsByRc(String regionCode);
+
+  List<Goods> getGoodsByTp(String type);
+
+  List<Goods> getGoodsByStt(String state);
 }

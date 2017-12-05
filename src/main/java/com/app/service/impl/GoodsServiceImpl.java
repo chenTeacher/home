@@ -9,12 +9,23 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service("goodsService")
-public class GoodsServiceImpl implements GoodsService{
+public class GoodsServiceImpl implements GoodsService {
+  @Resource
+  private GoodsDao goodsDao;
 
-    @Resource
-    private  GoodsDao goodsDao;
+  public List<Goods> getGoodsAll() {
+    return goodsDao.getGoodsAll();
+  }
 
-    public List<Goods> getData() {
-        return goodsDao.getData();
-    }
+  public List<Goods> getGoodsByRc(String regionCode) {
+    return goodsDao.getGoodsByRc(regionCode);
+  }
+
+  public List<Goods> getGoodsByTp(String type) {
+    return goodsDao.getGoodsByTp(type);
+  }
+
+  public List<Goods> getGoodsByStt(String state) {
+    return goodsDao.getGoodsByStt(state);
+  }
 }
