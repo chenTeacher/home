@@ -3,16 +3,16 @@
 <mapper namespace="com.app.dao.ServiceDao" >
 
   <!--获取一级服务的子服务列表-->
-  <select id="getsubListById"  resultType="com.app.entity.Service">
+  <select id="getsubListByType"  resultType="com.app.entity.Service">
 
-    select * from service WHERE  TP =#{id}
+    select * from service WHERE  TP =#{type}
 
   </select>
 
   <!--获取单个服务的详情-->
   <select id="getdetailListById"  resultType="com.app.entity.Service">
 
-    select * from service WHERE  id =#{id}
+    select * from service WHERE  ID =#{id}
 
   </select>
 
@@ -20,16 +20,30 @@
   <!--获取登陆图片-->
   <select id="loginImage"  resultType="com.app.entity.Image">
 
-    select * from login_ad_image WHERE  id =#{parm}
+    select * from image WHERE TP ='IMG_L'
 
   </select>
 
   <!--获取广告图片-->
   <select id="advertImage"  resultType="com.app.entity.Image">
 
-    select * from login_ad_image WHERE  id =#{parm}
+    select * from image WHERE TP='IMG_A'
 
   </select>
+
+
+
+  <!--保存服务订单-->
+  <insert id="saveOrder" parameterType="com.app.entity.Service" >
+    INSERT INTO service_order
+    (
+    ID,CUSTOMER_ID,ADDRESS_ID,SERVICE_ID,SC,DISCOUNT,CT,STT
+    )
+    VALUES
+    (
+    #{serviceOrder.ID},#{serviceOrder.CUSTOMER_ID},#{serviceOrder.ADDRESS_ID},#{serviceOrder.SERVICE_ID},#{serviceOrder.SC},#{serviceOrder.DISCOUNT},#{serviceOrder.CT},#{serviceOrder.STT}
+    )
+  </insert>
 
 
 </mapper>

@@ -3,12 +3,15 @@ package com.app.controller;
 import com.app.entity.Goods;
 import com.app.entity.Image;
 import com.app.entity.Service;
+import com.app.entity.ServiceOrder;
 import com.app.service.ServiceService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,14 +30,14 @@ public class ServiceController {
 
 
     /**
-     * 功能描述：通过一级服务的id获取对于的子列表
+     * 功能描述：通过一级服务的类别id 获取对应的子服务列表
      *
      *
      */
-    @RequestMapping("getsublist.do")
+    @RequestMapping("getsublist")
     @ResponseBody
-    public List getsubListById(String id){
-        List<Service> list=serviceService.getsubListById(id);
+    public List getsubListById(String type){
+        List<Service> list=serviceService.getsubListByType(type);
         return list;
     }
 
@@ -62,8 +65,8 @@ public class ServiceController {
      */
     @RequestMapping("getLoginImage")
     @ResponseBody
-    public List getLoginImage(String parm){
-        List<Image> list=serviceService.loginImage(parm);
+    public List getLoginImage(){
+        List<Image> list=serviceService.loginImage();
         return list;
     }
 
@@ -76,10 +79,41 @@ public class ServiceController {
      */
     @RequestMapping("getAdvertImage")
     @ResponseBody
-    public List getAdvertImage(String parm){
-        List<Image> list=serviceService.advertImage(parm);
+    public List getAdvertImage(){
+        List<Image> list=serviceService.advertImage();
         return list;
     }
+
+
+
+    /**
+     * 功能描述：下达服务订单
+     *
+     *
+     */
+    @RequestMapping("serviceOrder")
+    @ResponseBody
+    public String saveOrder(ServiceOrder serviceOrder){
+
+
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String datetime = sdf.format(date); //订单下达时间
+        serviceOrder.setSC(datetime);
+
+        String state ="false";
+
+        try {
+            serviceService.saveOrder(serviceOrder);
+            state="success";
+        }catch (Exception excpetion){
+            excpetion.printStackTrace();
+        }
+
+        return state;
+    }
+
+
 
 
 }
