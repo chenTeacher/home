@@ -1,148 +1,148 @@
 package com.app.entity;
 
 public class Goods {
-  private String ID;
-  private String CN;
-  private String IG;
-  private String PRICE;
-  private String PREPAY;
-  private String DISCOUNT;
-  private String CS;
-  private String CD;
-  private String REGION_RC;
-  private String AIP;
-  private String AIN;
-  private String DIP;
-  private String DIN;
-  private String TP;
-  private String STT;
-  private String OD;
+  private String id;
+  private String cn;
+  private String ig;
+  private String price;
+  private String prepay;
+  private String discount;
+  private String cs;
+  private String cd;
+  private String region_rc;
+  private String aip;
+  private String ain;
+  private String dip;
+  private String din;
+  private String tp;
+  private String stt;
+  private String od;
 
-  public String getID() {
-    return ID;
+  public String getId() {
+    return id;
   }
 
-  public void setID(String ID) {
-    this.ID = ID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public String getCN() {
-    return CN;
+  public String getCn() {
+    return cn;
   }
 
-  public void setCN(String CN) {
-    this.CN = CN;
+  public void setCn(String cn) {
+    this.cn = cn;
   }
 
-  public String getIG() {
-    return IG;
+  public String getIg() {
+    return ig;
   }
 
-  public void setIG(String IG) {
-    this.IG = IG;
+  public void setIg(String ig) {
+    this.ig = ig;
   }
 
-  public String getPRICE() {
-    return PRICE;
+  public String getPrice() {
+    return price;
   }
 
-  public void setPRICE(String PRICE) {
-    this.PRICE = PRICE;
+  public void setPrice(String price) {
+    this.price = price;
   }
 
-  public String getPREPAY() {
-    return PREPAY;
+  public String getPrepay() {
+    return prepay;
   }
 
-  public void setPREPAY(String PREPAY) {
-    this.PREPAY = PREPAY;
+  public void setPrepay(String prepay) {
+    this.prepay = prepay;
   }
 
-  public String getDISCOUNT() {
-    return DISCOUNT;
+  public String getDiscount() {
+    return discount;
   }
 
-  public void setDISCOUNT(String DISCOUNT) {
-    this.DISCOUNT = DISCOUNT;
+  public void setDiscount(String discount) {
+    this.discount = discount;
   }
 
-  public String getCS() {
-    return CS;
+  public String getCs() {
+    return cs;
   }
 
-  public void setCS(String CS) {
-    this.CS = CS;
+  public void setCs(String cs) {
+    this.cs = cs;
   }
 
-  public String getCD() {
-    return CD;
+  public String getCd() {
+    return cd;
   }
 
-  public void setCD(String CD) {
-    this.CD = CD;
+  public void setCd(String cd) {
+    this.cd = cd;
   }
 
-  public String getREGION_RC() {
-    return REGION_RC;
+  public String getRegion_rc() {
+    return region_rc;
   }
 
-  public void setREGION_RC(String REGION_RC) {
-    this.REGION_RC = REGION_RC;
+  public void setRegion_rc(String region_rc) {
+    this.region_rc = region_rc;
   }
 
-  public String getAIP() {
-    return AIP;
+  public String getAip() {
+    return aip;
   }
 
-  public void setAIP(String AIP) {
-    this.AIP = AIP;
+  public void setAip(String aip) {
+    this.aip = aip;
   }
 
-  public String getAIN() {
-    return AIN;
+  public String getAin() {
+    return ain;
   }
 
-  public void setAIN(String AIN) {
-    this.AIN = AIN;
+  public void setAin(String ain) {
+    this.ain = ain;
   }
 
-  public String getDIP() {
-    return DIP;
+  public String getDip() {
+    return dip;
   }
 
-  public void setDIP(String DIP) {
-    this.DIP = DIP;
+  public void setDip(String dip) {
+    this.dip = dip;
   }
 
-  public String getDIN() {
-    return DIN;
+  public String getDin() {
+    return din;
   }
 
-  public void setDIN(String DIN) {
-    this.DIN = DIN;
+  public void setDin(String din) {
+    this.din = din;
   }
 
-  public String getTP() {
-    return TP;
+  public String getTp() {
+    return tp;
   }
 
-  public void setTP(String TP) {
-    this.TP = TP;
+  public void setTp(String tp) {
+    this.tp = tp;
   }
 
-  public String getSTT() {
-    return STT;
+  public String getStt() {
+    return stt;
   }
 
-  public void setSTT(String STT) {
-    this.STT = STT;
+  public void setStt(String stt) {
+    this.stt = stt;
   }
 
-  public String getOD() {
-    return OD;
+  public String getOd() {
+    return od;
   }
 
-  public void setOD(String OD) {
-    this.OD = OD;
+  public void setOd(String od) {
+    this.od = od;
   }
 }
